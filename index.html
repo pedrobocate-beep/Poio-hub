@@ -271,9 +271,10 @@
             <h2>Coleção de Scripts 📜</h2>
             <p class="subtitle">Selecione uma categoria e clique no script para revelar o loadstring.</p>
 
-            <!-- Category tabs -->
             <div class="platform-tabs" id="scriptCatBar">
-                <button class="platform-tab-btn active" onclick="showScriptCat('cat-bloxfruits')">⚔️ Blox Fruits</button>
+                <button class="platform-tab-btn active" onclick="showScriptCat('cat-bloxfruits')">
+                    <img src="https://imgs.search.brave.com/kAar2S4U6cwV1SVsX2IJpQthQAm5fjuyWzQTYSFFZe8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMud2lraWEubm9j/b29raWUubmV0L3Jv/YmxveC1ibG94LXBp/ZWNlL2ltYWdlcy9l/L2U2L1NpdGUtbG9n/by5wbmcvcmV2aXNp/b24vbGF0ZXN0P2Ni/PTIwMjUwNDA0MTIw/MTA5" style="height:22px;width:auto;object-fit:contain;"> Blox Fruits
+                </button>
             </div>
 
             <!-- ── Blox Fruits ── -->
@@ -291,7 +292,20 @@
                     <button class="script-button" onclick="toggleScript('nightHub')">Night Hub</button>
                     <button class="script-button" onclick="toggleScript('zenHub')">Zen Hub</button>
                     <button class="script-button" onclick="toggleScript('orbitHub')">Orbit Hub</button>
+                    <button class="script-button" onclick="toggleScript('annieHub')">Annie Hub</button>
+                    <button class="script-button" onclick="toggleScript('orangeHub')">Orange Hub</button>
+                    <button class="script-button" onclick="toggleScript('moonlightHub')">Moonlight Hub</button>
+                    <button class="script-button" onclick="toggleScript('bosturHub')">Bostur Hub</button>
+                    <button class="script-button" onclick="toggleScript('midnightX')">Midnight X Hub</button>
+                    <button class="script-button" onclick="toggleScript('okHub')">OK Hub</button>
                 </div>
+
+                <!-- badge "Sem Key" abaixo dos botões -->
+                <p style="font-size:0.78rem;color:var(--text-muted);margin:-10px 0 20px;letter-spacing:0.5px;">
+                    <i class="fas fa-circle" style="color:var(--accent-primary);font-size:0.5rem;vertical-align:middle;margin-right:5px;"></i>
+                    Todos os scripts acima são <strong style="color:var(--accent-primary)">Sem Key</strong>
+                </p>
+
                 <div class="script-wrapper" id="ttn">
                     <pre class="script-text">Config = {
     Team = "Pirates",
@@ -372,51 +386,30 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Dev-NightMystic/Bloxf
                     <div class="script-text">loadstring(game:HttpGet("https://raw.githubusercontent.com/Abyssal-lol/Orbit.cc/refs/heads/main/Loader.lua"))()</div>
                     <button class="copy-btn" onclick="copyScript(this)" title="Copiar"><i class="fas fa-copy"></i></button>
                 </div>
-            </div>
-
-            <!-- ── Outros Jogos ── -->
-            <div id="cat-outros" class="platform-panel">
-                <div class="scripts-grid">
-                    <button class="script-button" onclick="toggleScript('kickLucky')">🍀 Kick a Lucky Block</button>
-                    <button class="script-button" onclick="toggleScript('kickLucky2')">🍀 Kick a Lucky Block 2</button>
-                    <button class="script-button" onclick="toggleScript('buildBoat')">🚤 Build a Boat</button>
-                    <button class="script-button" onclick="toggleScript('fisch')">🎣 Fisch</button>
-                    <button class="script-button" onclick="toggleScript('kat')">🔪 KAT</button>
-                    <button class="script-button" onclick="toggleScript('hypershot')">🎯 Hypershot</button>
-                </div>
-                <div class="script-wrapper" id="kickLucky">
-                    <div class="script-text">loadstring(game:HttpGet("https://raw.githubusercontent.com/gumanba/Scripts/main/KickaLuckyBlock"))()</div>
+                <div class="script-wrapper" id="annieHub">
+                    <div class="script-text">loadstring(game:HttpGet("https://raw.githubusercontent.com/Anniecreate86/BloxFruits/refs/heads/main/BetaHub-BF"))()</div>
                     <button class="copy-btn" onclick="copyScript(this)" title="Copiar"><i class="fas fa-copy"></i></button>
                 </div>
-                <div class="script-wrapper" id="kickLucky2">
-                    <div class="script-text">loadstring(game:HttpGet("https://rawscripts.net/raw/Kick-a-Lucky-Block-Auto-farm-and-no-key-205747"))()</div>
+                <div class="script-wrapper" id="orangeHub">
+                    <div class="script-text">loadstring(game:HttpGet("https://raw.githubusercontent.com/HieuDepTrai-Z/Dev_Orange/refs/heads/main/OrangeHub.lua"))()</div>
                     <button class="copy-btn" onclick="copyScript(this)" title="Copiar"><i class="fas fa-copy"></i></button>
                 </div>
-                <div class="script-wrapper" id="buildBoat">
-                    <div class="script-text">loadstring(game:HttpGet("https://pastebin.com/raw/2rgfgZJP"))()</div>
+                <div class="script-wrapper" id="moonlightHub">
+                    <div class="script-text">loadstring(game:HttpGet("https://raw.githubusercontent.com/Dev-Moonlight/Moonlight/refs/heads/main/Main"))()</div>
                     <button class="copy-btn" onclick="copyScript(this)" title="Copiar"><i class="fas fa-copy"></i></button>
                 </div>
-                <div class="script-wrapper" id="fisch">
-                    <div class="script-text">loadstring(game:HttpGet("https://soluna-script.vercel.app/fisch.lua",true))()</div>
+                <div class="script-wrapper" id="bosturHub">
+                    <div class="script-text">loadstring(game:HttpGet("https://raw.githubusercontent.com/thihaccff-alt/H-hhhaa/refs/heads/main/MainBosturUiRedzHub-obfuscated.lua"))()</div>
                     <button class="copy-btn" onclick="copyScript(this)" title="Copiar"><i class="fas fa-copy"></i></button>
                 </div>
-                <div class="script-wrapper" id="kat">
-                    <div class="script-text">loadstring(game:HttpGet("https://raw.githubusercontent.com/luiz-felippe2359/dada/refs/heads/main/README.md"))()</div>
+                <div class="script-wrapper" id="midnightX">
+                    <pre class="script-text">repeat wait() until game:IsLoaded() and game.Players.LocalPlayer
+getgenv().Team = "Pirates"
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Ohofo2279/Midnight/refs/heads/main/MidnightX-BloxFruits.lua"))()</pre>
                     <button class="copy-btn" onclick="copyScript(this)" title="Copiar"><i class="fas fa-copy"></i></button>
                 </div>
-                <div class="script-wrapper" id="hypershot">
-                    <div class="script-text">loadstring(game:HttpGet("https://raw.githubusercontent.com/Joshingtonn123/JoshScript/refs/heads/main/Syrexhubhypershot"))()</div>
-                    <button class="copy-btn" onclick="copyScript(this)" title="Copiar"><i class="fas fa-copy"></i></button>
-                </div>
-            </div>
-
-            <!-- ── Universal ── -->
-            <div id="cat-universal" class="platform-panel">
-                <div class="scripts-grid">
-                    <button class="script-button" onclick="toggleScript('universalBanana')">🐱 Banana Cat Hub</button>
-                </div>
-                <div class="script-wrapper" id="universalBanana">
-                    <div class="script-text">loadstring(game:HttpGet("https://pastefy.app/GFsET9tC/raw"))()</div>
+                <div class="script-wrapper" id="okHub">
+                    <div class="script-text">loadstring(game:HttpGet("https://raw.githubusercontent.com/fakekuri/Okhubhere/refs/heads/main/MainBloxFruit.lua"))()</div>
                     <button class="copy-btn" onclick="copyScript(this)" title="Copiar"><i class="fas fa-copy"></i></button>
                 </div>
             </div>
@@ -434,35 +427,71 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Dev-NightMystic/Bloxf
 
             <div id="platform-windows" class="platform-panel active">
                 <div class="menu-overview">
+                    <!-- FREE -->
                     <div class="menu-card">
                         <img src="https://xeno-onl.com/assets/xeno-logo.png" class="executor-logo" alt="Xeno">
                         <h3>Xeno Executor</h3>
-                        <p style="margin-bottom:25px">Confiável, atualizado regularmente e altamente seguro.</p>
+                        <p style="margin-bottom:10px">Confiável, atualizado regularmente e altamente seguro.</p>
+                        <span style="font-size:0.7rem;font-weight:700;color:var(--accent-primary);background:rgba(0,255,136,0.1);border:1px solid rgba(0,255,136,0.25);border-radius:20px;padding:2px 10px;margin-bottom:18px;display:inline-block;">FREE</span>
                         <a href="https://getxeno.site/" class="btn-action" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/72/72651.png" class="btn-icon"> Baixar Xeno</a>
-                    </div>
-                    <div class="menu-card">
-                        <img src="https://cdn.haxhell.com/executors/icon-velocity.webp" class="executor-logo" alt="Velocity">
-                        <h3>VELOCITY</h3>
-                        <p style="margin-bottom:25px">O melhor executor sem key disponível na comunidade.</p>
-                        <a href="https://realvelocity.xyz/" class="btn-action" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/72/72651.png" class="btn-icon"> Baixar VELOCITY</a>
                     </div>
                     <div class="menu-card">
                         <img src="https://api.rekonise.com/storage/serve/b64_Mzg2MTIzLzE3MjY3NTc0NzYzMDMtc29sYXJhbG9nby1yZW1vdmViZy1wcmV2aWV3LnBuZw" class="executor-logo" alt="Solara">
                         <h3>Solara</h3>
-                        <p style="margin-bottom:25px">Executor rápido e eficiente para Windows, com atualizações frequentes.</p>
+                        <p style="margin-bottom:10px">Executor rápido e eficiente para Windows.</p>
+                        <span style="font-size:0.7rem;font-weight:700;color:var(--accent-primary);background:rgba(0,255,136,0.1);border:1px solid rgba(0,255,136,0.25);border-radius:20px;padding:2px 10px;margin-bottom:18px;display:inline-block;">FREE</span>
                         <a href="https://getsolara.dev/" class="btn-action" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/72/72651.png" class="btn-icon"> Baixar Solara</a>
+                    </div>
+                    <div class="menu-card">
+                        <img src="https://nexomia.win/logo.png" class="executor-logo" alt="Nexomia">
+                        <h3>Nexomia.win</h3>
+                        <p style="margin-bottom:10px">Executor moderno e poderoso para Windows.</p>
+                        <span style="font-size:0.7rem;font-weight:700;color:var(--accent-primary);background:rgba(0,255,136,0.1);border:1px solid rgba(0,255,136,0.25);border-radius:20px;padding:2px 10px;margin-bottom:18px;display:inline-block;">FREE</span>
+                        <a href="https://nexomia.win/" class="btn-action" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/72/72651.png" class="btn-icon"> Baixar Nexomia</a>
+                    </div>
+                    <!-- COM KEY -->
+                    <div class="menu-card">
+                        <img src="https://cdn.haxhell.com/executors/icon-velocity.webp" class="executor-logo" alt="Velocity">
+                        <h3>VELOCITY</h3>
+                        <p style="margin-bottom:10px">O melhor executor com key da comunidade.</p>
+                        <span style="font-size:0.7rem;font-weight:700;color:#facc15;background:rgba(250,204,21,0.1);border:1px solid rgba(250,204,21,0.25);border-radius:20px;padding:2px 10px;margin-bottom:18px;display:inline-block;">COM KEY</span>
+                        <a href="https://realvelocity.xyz/" class="btn-action" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/72/72651.png" class="btn-icon"> Baixar VELOCITY</a>
                     </div>
                     <div class="menu-card">
                         <img src="https://i.imgur.com/vGmcKsi_d.webp?maxwidth=760&fidelity=grand" class="executor-logo" alt="Madium">
                         <h3>Madium</h3>
-                        <p style="margin-bottom:25px">Executor confiável e fácil de usar para Windows.</p>
+                        <p style="margin-bottom:10px">Executor confiável e fácil de usar para Windows.</p>
+                        <span style="font-size:0.7rem;font-weight:700;color:#facc15;background:rgba(250,204,21,0.1);border:1px solid rgba(250,204,21,0.25);border-radius:20px;padding:2px 10px;margin-bottom:18px;display:inline-block;">COM KEY</span>
                         <a href="https://getmadium.net/" class="btn-action" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/72/72651.png" class="btn-icon"> Baixar Madium</a>
                     </div>
+                    <!-- PAGO -->
                     <div class="menu-card">
-                        <img src="https://nexomia.win/logo.png" class="executor-logo" alt="Nexomia Logo">
-                        <h3>Nexomia.win</h3>
-                        <p style="margin-bottom:25px">Executor moderno e poderoso para Windows.</p>
-                        <a href="https://nexomia.win/" class="btn-action" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/72/72651.png" class="btn-icon"> Baixar Nexomia</a>
+                        <img src="https://www.getvortex.online/assets/logo.png" class="executor-logo" alt="Vortex">
+                        <h3>Vortex</h3>
+                        <p style="margin-bottom:10px">Executor poderoso e completo para Windows.</p>
+                        <span style="font-size:0.7rem;font-weight:700;color:#f87171;background:rgba(248,113,113,0.1);border:1px solid rgba(248,113,113,0.25);border-radius:20px;padding:2px 10px;margin-bottom:18px;display:inline-block;">COM KEY</span>
+                        <a href="https://www.getvortex.online/" class="btn-action" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/72/72651.png" class="btn-icon"> Baixar Vortex</a>
+                    </div>
+                    <div class="menu-card">
+                        <img src="https://media.karousell.com/media/photos/products/2025/12/5/roblox_vault_awp_v2__executor__1764921674_37063614_progressive" class="executor-logo" alt="Volt">
+                        <h3>Volt</h3>
+                        <p style="margin-bottom:10px">Executor premium com recursos avançados.</p>
+                        <span style="font-size:0.7rem;font-weight:700;color:#f87171;background:rgba(248,113,113,0.1);border:1px solid rgba(248,113,113,0.25);border-radius:20px;padding:2px 10px;margin-bottom:18px;display:inline-block;">PAGO</span>
+                        <a href="https://voltbz.net/" class="btn-action" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/72/72651.png" class="btn-icon"> Baixar Volt</a>
+                    </div>
+                    <div class="menu-card">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTc4TYNOH7hNzHsQ-3oKYqgVEjQrmFIIVoGck3GqgH5Pg&s" class="executor-logo" alt="Potassium">
+                        <h3>Potassium</h3>
+                        <p style="margin-bottom:10px">Executor de alto desempenho para Windows.</p>
+                        <span style="font-size:0.7rem;font-weight:700;color:#f87171;background:rgba(248,113,113,0.1);border:1px solid rgba(248,113,113,0.25);border-radius:20px;padding:2px 10px;margin-bottom:18px;display:inline-block;">PAGO</span>
+                        <a href="https://www.potassium.pro/" class="btn-action" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/72/72651.png" class="btn-icon"> Baixar Potassium</a>
+                    </div>
+                    <div class="menu-card">
+                        <img src="https://getwave.gg/wave/Logo5.png" class="executor-logo" alt="Wave">
+                        <h3>Wave</h3>
+                        <p style="margin-bottom:10px">Executor premium com interface elegante.</p>
+                        <span style="font-size:0.7rem;font-weight:700;color:#f87171;background:rgba(248,113,113,0.1);border:1px solid rgba(248,113,113,0.25);border-radius:20px;padding:2px 10px;margin-bottom:18px;display:inline-block;">PAGO</span>
+                        <a href="https://getwave.gg/" class="btn-action" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/72/72651.png" class="btn-icon"> Baixar Wave</a>
                     </div>
                 </div>
             </div>
