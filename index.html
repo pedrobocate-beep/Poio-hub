@@ -276,7 +276,10 @@
                     <img src="https://imgs.search.brave.com/kAar2S4U6cwV1SVsX2IJpQthQAm5fjuyWzQTYSFFZe8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMud2lraWEubm9j/b29raWUubmV0L3Jv/YmxveC1ibG94LXBp/ZWNlL2ltYWdlcy9l/L2U2L1NpdGUtbG9n/by5wbmcvcmV2aXNp/b24vbGF0ZXN0P2Ni/PTIwMjUwNDA0MTIw/MTA5" style="height:36px;width:auto;object-fit:contain;">
                 </button>
                 <button class="platform-tab-btn" onclick="showScriptCat('cat-99nights')">
-                    <img src="https://imgs.search.brave.com/CVWgLxvsRcVN-R8K6LDKFj9BsWDtL_f5hbViMWHS5gI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMud2lraWEubm9j/b29raWUubmV0Lzk5/LW5pZ2h0cy1pbi10/aGUtZm9yZXN0L2lt/YWdlcy80LzRlL1Ro/ZURlZXIucG5nL3Jl/dmlzaW9uL2xhdGVz/dC9zY2FsZS10by13/aWR0aC1kb3duLzI2/OD9jYj0yMDI1MDcy/OTIxMjAwMg" style="height:36px;width:auto;object-fit:contain;">
+                    <img src="https://imgs.search.brave.com/CVWgLxvsRcVN-R8K6LDKFj9BsWDtL_f5hbViMWHS5gI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMud2lraWEubm9j/b29raWUubmV0Lzk5/LW5pZ2h0cy1pbi10/aGUtZm9yZXN0L2lt/YWdlcy80LzRlL1Ro/ZURlZXIucG5nL3Jl/dmlzaW9uL2xhdGVz/dC9zY2FsZS10by13/aWR0aC1kb3duLzI2/OD9jYj0yMDI1MDcy/OTIxMjAwMg" style="height:52px;width:auto;object-fit:contain;">
+                </button>
+                <button class="platform-tab-btn" onclick="showScriptCat('cat-animalhospital')">
+                    <img src="https://imgs.search.brave.com/n-CXZmzp6U5KDNKdIIM9w7No_GavkemlHbxin8KfNg4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMuZ29zdWdhbWVy/cy5uZXQvZjkvZWYv/ZjQvMDQ4MGE1YzU0/MjQxMDE2NzdhZWU1/ZWFmY2Q3ZjJhN2Y4/YzcwZmQyMDQwNGM5/NzdjOTMyY2U5ZDM0/NS53ZWJwP3c9MTYw/MA" style="height:36px;width:auto;object-fit:contain;">
                 </button>
             </div>
 
@@ -454,6 +457,37 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Ohofo2279/Midnight/re
                 </div>
                 <div class="script-wrapper" id="cpsHub">
                     <div class="script-text">loadstring(game:HttpGet("https://raw.githubusercontent.com/Rx1m/CpsHub/refs/heads/main/Hub",true))()</div>
+                    <button class="copy-btn" onclick="copyScript(this)" title="Copiar"><i class="fas fa-copy"></i></button>
+                </div>
+            </div>
+
+            <!-- ── Animal Hospital ── -->
+            <div id="cat-animalhospital" class="platform-panel">
+                <div class="scripts-grid">
+                    <button class="script-button" onclick="toggleScript('patchHub')">PATCH HUB <span class="sk-badge">Sem Key</span></button>
+                    <button class="script-button" onclick="toggleScript('miniHub')">MINI HUB <span class="sk-badge">Sem Key</span></button>
+                    <button class="script-button" onclick="toggleScript('luminHub')">LUMIN HUB <span class="sk-badge" style="color:#ffcc00;background:rgba(255,204,0,0.1);border-color:rgba(255,204,0,0.3)">Com Key</span></button>
+                    <button class="script-button" onclick="toggleScript('solixHub')">SOLIX HUB <span class="sk-badge" style="color:#ffcc00;background:rgba(255,204,0,0.1);border-color:rgba(255,204,0,0.3)">Com Key</span></button>
+                    <button class="script-button" onclick="toggleScript('axomHub')">AXOM HUB <span class="sk-badge" style="color:#ffcc00;background:rgba(255,204,0,0.1);border-color:rgba(255,204,0,0.3)">Com Key</span></button>
+                </div>
+                <div class="script-wrapper" id="patchHub">
+                    <div class="script-text">loadstring(game:HttpGet("https://raw.githubusercontent.com/patch-ez/animals-touched-me/main/animal_hospital_automation_obfuscated.lua"))()</div>
+                    <button class="copy-btn" onclick="copyScript(this)" title="Copiar"><i class="fas fa-copy"></i></button>
+                </div>
+                <div class="script-wrapper" id="miniHub">
+                    <div class="script-text">loadstring(game:HttpGet("https://raw.githubusercontent.com/MinityD/roblox-utils/main/animal%20hospital.lua"))()</div>
+                    <button class="copy-btn" onclick="copyScript(this)" title="Copiar"><i class="fas fa-copy"></i></button>
+                </div>
+                <div class="script-wrapper" id="luminHub">
+                    <div class="script-text">loadstring(game:HttpGet("http://luminon.top/loader.lua"))()</div>
+                    <button class="copy-btn" onclick="copyScript(this)" title="Copiar"><i class="fas fa-copy"></i></button>
+                </div>
+                <div class="script-wrapper" id="solixHub">
+                    <div class="script-text">loadstring(game:HttpGet("https://raw.githubusercontent.com/meobeo8/a/a/a"))()</div>
+                    <button class="copy-btn" onclick="copyScript(this)" title="Copiar"><i class="fas fa-copy"></i></button>
+                </div>
+                <div class="script-wrapper" id="axomHub">
+                    <div class="script-text">loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/97c3f6db55a2cf72141537a85458e5a7.lua"))()</div>
                     <button class="copy-btn" onclick="copyScript(this)" title="Copiar"><i class="fas fa-copy"></i></button>
                 </div>
             </div>
