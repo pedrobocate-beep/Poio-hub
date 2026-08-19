@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voice Notepad</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Fira+Code&display=swap" rel="stylesheet">
+    <!-- Phosphor Icons for modern SVG icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body>
+    <div class="app-container">
+        <header class="toolbar">
+            <div class="toolbar-left">
+                <h1>Voice Notepad</h1>
+            </div>
+            <div class="toolbar-right">
+                <button id="btn-start" class="btn btn-primary" title="Iniciar Gravação">
+                    <i class="ph ph-microphone"></i> Falar
+                </button>
+                <button id="btn-stop" class="btn btn-danger hidden" title="Parar Gravação">
+                    <i class="ph ph-stop-circle"></i> Parar
+                </button>
+                <div class="divider"></div>
+                <button id="btn-save" class="btn btn-secondary" title="Salvar Arquivo">
+                    <i class="ph ph-floppy-disk"></i> Salvar
+                </button>
+            </div>
+        </header>
+        
+        <main class="editor-container">
+            <div id="status-indicator" class="status-indicator">Pronto para ouvir...</div>
+            <textarea id="text-editor" placeholder="Seu texto aparecerá aqui..."></textarea>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
