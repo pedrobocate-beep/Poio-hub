@@ -275,6 +275,9 @@
                 <button class="platform-tab-btn active" onclick="showScriptCat('cat-bloxfruits')">
                     <img src="https://imgs.search.brave.com/kAar2S4U6cwV1SVsX2IJpQthQAm5fjuyWzQTYSFFZe8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMud2lraWEubm9j/b29raWUubmV0L3Jv/YmxveC1ibG94LXBp/ZWNlL2ltYWdlcy9l/L2U2L1NpdGUtbG9n/by5wbmcvcmV2aXNp/b24vbGF0ZXN0P2Ni/PTIwMjUwNDA0MTIw/MTA5" style="height:36px;width:auto;object-fit:contain;">
                 </button>
+                <button class="platform-tab-btn" onclick="showScriptCat('cat-99nights')">
+                    <img src="https://imgs.search.brave.com/CVWgLxvsRcVN-R8K6LDKFj9BsWDtL_f5hbViMWHS5gI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMud2lraWEubm9j/b29raWUubmV0Lzk5/LW5pZ2h0cy1pbi10/aGUtZm9yZXN0L2lt/YWdlcy80LzRlL1Ro/ZURlZXIucG5nL3Jl/dmlzaW9uL2xhdGVz/dC9zY2FsZS10by13/aWR0aC1kb3duLzI2/OD9jYj0yMDI1MDcy/OTIxMjAwMg" style="height:36px;width:auto;object-fit:contain;">
+                </button>
             </div>
 
             <!-- ── Blox Fruits ── -->
@@ -415,6 +418,42 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Ohofo2279/Midnight/re
                 </div>
                 <div class="script-wrapper" id="okHub">
                     <div class="script-text">loadstring(game:HttpGet("https://raw.githubusercontent.com/fakekuri/Okhubhere/refs/heads/main/MainBloxFruit.lua"))()</div>
+                    <button class="copy-btn" onclick="copyScript(this)" title="Copiar"><i class="fas fa-copy"></i></button>
+                </div>
+            </div>
+
+            <!-- ── 99 Nights in the Forest ── -->
+            <div id="cat-99nights" class="platform-panel">
+                <div class="scripts-grid">
+                    <button class="script-button" onclick="toggleScript('nezuro')">NEZURO HUB <span class="sk-badge">Sem Key</span></button>
+                    <button class="script-button" onclick="toggleScript('foxname')">FOX NAME <span class="sk-badge">Sem Key</span></button>
+                    <button class="script-button" onclick="toggleScript('lnr')">LNR <span class="sk-badge" style="color:#ffcc00;background:rgba(255,204,0,0.1);border-color:rgba(255,204,0,0.3)">Com Key</span></button>
+                    <button class="script-button" onclick="toggleScript('devware')">DEVWARE <span class="sk-badge">Sem Key</span></button>
+                    <button class="script-button" onclick="toggleScript('ringtaHub')">RINGTA HUB <span class="sk-badge">Sem Key</span></button>
+                    <button class="script-button" onclick="toggleScript('cpsHub')">CPS HUB <span class="sk-badge">Sem Key</span></button>
+                </div>
+                <div class="script-wrapper" id="nezuro">
+                    <div class="script-text">loadstring(game:HttpGet('https://nazuro.xyz/99nights'))()</div>
+                    <button class="copy-btn" onclick="copyScript(this)" title="Copiar"><i class="fas fa-copy"></i></button>
+                </div>
+                <div class="script-wrapper" id="foxname">
+                    <div class="script-text">loadstring(game:HttpGet("https://raw.githubusercontent.com/caomod2077/Script/refs/heads/main/FoxnameHub.lua"))()</div>
+                    <button class="copy-btn" onclick="copyScript(this)" title="Copiar"><i class="fas fa-copy"></i></button>
+                </div>
+                <div class="script-wrapper" id="lnr">
+                    <div class="script-text">loadstring(game:HttpGet("https://lunor.dev/loader"))()</div>
+                    <button class="copy-btn" onclick="copyScript(this)" title="Copiar"><i class="fas fa-copy"></i></button>
+                </div>
+                <div class="script-wrapper" id="devware">
+                    <div class="script-text">loadstring(game:HttpGet("https://raw.githubusercontent.com/Devvzn/DevWare/refs/heads/main/DevMain"))()</div>
+                    <button class="copy-btn" onclick="copyScript(this)" title="Copiar"><i class="fas fa-copy"></i></button>
+                </div>
+                <div class="script-wrapper" id="ringtaHub">
+                    <div class="script-text">loadstring(game:HttpGet("https://raw.githubusercontent.com/wehibuyfgyuwe/99nights.github.io/refs/heads/main/ringta.lua"))()</div>
+                    <button class="copy-btn" onclick="copyScript(this)" title="Copiar"><i class="fas fa-copy"></i></button>
+                </div>
+                <div class="script-wrapper" id="cpsHub">
+                    <div class="script-text">loadstring(game:HttpGet("https://raw.githubusercontent.com/Rx1m/CpsHub/refs/heads/main/Hub",true))()</div>
                     <button class="copy-btn" onclick="copyScript(this)" title="Copiar"><i class="fas fa-copy"></i></button>
                 </div>
             </div>
