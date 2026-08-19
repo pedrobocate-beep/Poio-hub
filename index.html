@@ -278,10 +278,207 @@
 
             <!-- ── Blox Fruits ── -->
             <div id="cat-bloxfruits" class="platform-panel active">
-                <div class="scripts-grid">
-                    <button class="script-button" onclick="toggleScript('ttn')">🏴‍☠️ 3TN</button>
-                    <button class="script-button" onclick="toggleScript('neji')">🌀 Neji</button>
-                    <button class="script-button" onclick="toggleScript('quantumOnyx')">💎 QuantumOnyx</button>
+
+                <style>
+                .hub-grid {
+                    display: grid;
+                    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+                    gap: 16px;
+                    margin-bottom: 24px;
+                }
+                .hub-card {
+                    background: var(--card-bg);
+                    border: 1px solid rgba(255,255,255,0.07);
+                    border-radius: 14px;
+                    overflow: hidden;
+                    cursor: pointer;
+                    transition: all 0.3s ease;
+                    position: relative;
+                }
+                .hub-card::before {
+                    content: '';
+                    position: absolute;
+                    top: 0; left: 0; right: 0; height: 3px;
+                    background: linear-gradient(90deg, var(--accent-primary), var(--accent-secondary));
+                    opacity: 0;
+                    transition: opacity 0.3s;
+                }
+                .hub-card:hover {
+                    transform: translateY(-5px);
+                    border-color: rgba(0,255,136,0.3);
+                    box-shadow: 0 12px 30px rgba(0,0,0,0.4), 0 0 15px rgba(0,255,136,0.1);
+                }
+                .hub-card:hover::before { opacity: 1; }
+                .hub-card.active-card {
+                    border-color: rgba(0,255,136,0.5);
+                    box-shadow: 0 0 20px rgba(0,255,136,0.15);
+                }
+                .hub-card-img {
+                    width: 100%;
+                    height: 110px;
+                    object-fit: cover;
+                    display: block;
+                    background: #0d1020;
+                }
+                .hub-card-img-wrap {
+                    width: 100%;
+                    height: 110px;
+                    background: linear-gradient(135deg, #0d1020, #131830);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    overflow: hidden;
+                }
+                .hub-card-img-wrap img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+                .hub-card-body {
+                    padding: 10px 12px 12px;
+                }
+                .hub-card-name {
+                    font-size: 0.88rem;
+                    font-weight: 700;
+                    color: var(--text-main);
+                    margin-bottom: 3px;
+                }
+                .hub-card-badge {
+                    font-size: 0.65rem;
+                    font-weight: 700;
+                    letter-spacing: 0.5px;
+                    text-transform: uppercase;
+                    color: var(--accent-primary);
+                    background: rgba(0,255,136,0.1);
+                    border: 1px solid rgba(0,255,136,0.2);
+                    border-radius: 20px;
+                    padding: 2px 8px;
+                    display: inline-block;
+                }
+                </style>
+
+                <div class="hub-grid">
+
+                    <div class="hub-card" onclick="toggleScript('ttn')">
+                        <div class="hub-card-img-wrap">
+                            <img src="https://i.imgur.com/2nCt3Sbl.jpg" alt="3TN" onerror="this.src='https://static.wikia.nocookie.net/blox-fruits/images/5/5c/Game_Logo.png'">
+                        </div>
+                        <div class="hub-card-body">
+                            <div class="hub-card-name">3TN Hub</div>
+                            <span class="hub-card-badge">Sem Key</span>
+                        </div>
+                    </div>
+
+                    <div class="hub-card" onclick="toggleScript('neji')">
+                        <div class="hub-card-img-wrap">
+                            <img src="https://i.imgur.com/KwITLWcl.jpg" alt="Neji" onerror="this.src='https://static.wikia.nocookie.net/blox-fruits/images/5/5c/Game_Logo.png'">
+                        </div>
+                        <div class="hub-card-body">
+                            <div class="hub-card-name">Neji Hub</div>
+                            <span class="hub-card-badge">Sem Key</span>
+                        </div>
+                    </div>
+
+                    <div class="hub-card" onclick="toggleScript('quantumOnyx')">
+                        <div class="hub-card-img-wrap">
+                            <img src="https://cheatermad.com/wp-content/uploads/2024/05/quantum_hub-335x195.png" alt="QuantumOnyx" onerror="this.src='https://static.wikia.nocookie.net/blox-fruits/images/5/5c/Game_Logo.png'">
+                        </div>
+                        <div class="hub-card-body">
+                            <div class="hub-card-name">QuantumOnyx</div>
+                            <span class="hub-card-badge">Sem Key</span>
+                        </div>
+                    </div>
+
+                    <div class="hub-card" onclick="toggleScript('astralHub')">
+                        <div class="hub-card-img-wrap">
+                            <img src="https://i.imgur.com/Xu3FbkYl.jpg" alt="Astral Hub" onerror="this.src='https://static.wikia.nocookie.net/blox-fruits/images/5/5c/Game_Logo.png'">
+                        </div>
+                        <div class="hub-card-body">
+                            <div class="hub-card-name">Astral Hub</div>
+                            <span class="hub-card-badge">Sem Key</span>
+                        </div>
+                    </div>
+
+                    <div class="hub-card" onclick="toggleScript('nhtHub')">
+                        <div class="hub-card-img-wrap">
+                            <img src="https://i.imgur.com/5ySLWEBl.jpg" alt="NHT Hub" onerror="this.src='https://static.wikia.nocookie.net/blox-fruits/images/5/5c/Game_Logo.png'">
+                        </div>
+                        <div class="hub-card-body">
+                            <div class="hub-card-name">NHT Hub</div>
+                            <span class="hub-card-badge">Sem Key</span>
+                        </div>
+                    </div>
+
+                    <div class="hub-card" onclick="toggleScript('tdtHub')">
+                        <div class="hub-card-img-wrap">
+                            <img src="https://i.imgur.com/Ld9C9Ecl.jpg" alt="TDT Hub" onerror="this.src='https://static.wikia.nocookie.net/blox-fruits/images/5/5c/Game_Logo.png'">
+                        </div>
+                        <div class="hub-card-body">
+                            <div class="hub-card-name">TDT Hub</div>
+                            <span class="hub-card-badge">Sem Key</span>
+                        </div>
+                    </div>
+
+                    <div class="hub-card" onclick="toggleScript('zeeHub')">
+                        <div class="hub-card-img-wrap">
+                            <img src="https://i.imgur.com/QxHsmNNl.jpg" alt="Zee Hub" onerror="this.src='https://static.wikia.nocookie.net/blox-fruits/images/5/5c/Game_Logo.png'">
+                        </div>
+                        <div class="hub-card-body">
+                            <div class="hub-card-name">Zee Hub VIP</div>
+                            <span class="hub-card-badge">Sem Key</span>
+                        </div>
+                    </div>
+
+                    <div class="hub-card" onclick="toggleScript('nightMystic')">
+                        <div class="hub-card-img-wrap">
+                            <img src="https://i.imgur.com/eGl9Yvul.jpg" alt="Night Mystic" onerror="this.src='https://static.wikia.nocookie.net/blox-fruits/images/5/5c/Game_Logo.png'">
+                        </div>
+                        <div class="hub-card-body">
+                            <div class="hub-card-name">Night Mystic Hub</div>
+                            <span class="hub-card-badge">Sem Key</span>
+                        </div>
+                    </div>
+
+                    <div class="hub-card" onclick="toggleScript('sigmaHub')">
+                        <div class="hub-card-img-wrap">
+                            <img src="https://i.imgur.com/RXvkWIIl.jpg" alt="Sigma Hub" onerror="this.src='https://static.wikia.nocookie.net/blox-fruits/images/5/5c/Game_Logo.png'">
+                        </div>
+                        <div class="hub-card-body">
+                            <div class="hub-card-name">Sigma Hub</div>
+                            <span class="hub-card-badge">Sem Key</span>
+                        </div>
+                    </div>
+
+                    <div class="hub-card" onclick="toggleScript('nightHub')">
+                        <div class="hub-card-img-wrap">
+                            <img src="https://i.imgur.com/pBq6A84l.jpg" alt="Night Hub" onerror="this.src='https://static.wikia.nocookie.net/blox-fruits/images/5/5c/Game_Logo.png'">
+                        </div>
+                        <div class="hub-card-body">
+                            <div class="hub-card-name">Night Hub</div>
+                            <span class="hub-card-badge">Sem Key</span>
+                        </div>
+                    </div>
+
+                    <div class="hub-card" onclick="toggleScript('zenHub')">
+                        <div class="hub-card-img-wrap">
+                            <img src="https://i.imgur.com/oOW8KBPl.jpg" alt="Zen Hub" onerror="this.src='https://static.wikia.nocookie.net/blox-fruits/images/5/5c/Game_Logo.png'">
+                        </div>
+                        <div class="hub-card-body">
+                            <div class="hub-card-name">Zen Hub</div>
+                            <span class="hub-card-badge">Sem Key</span>
+                        </div>
+                    </div>
+
+                    <div class="hub-card" onclick="toggleScript('orbitHub')">
+                        <div class="hub-card-img-wrap">
+                            <img src="https://i.imgur.com/uUsFHpGl.jpg" alt="Orbit Hub" onerror="this.src='https://static.wikia.nocookie.net/blox-fruits/images/5/5c/Game_Logo.png'">
+                        </div>
+                        <div class="hub-card-body">
+                            <div class="hub-card-name">Orbit Hub</div>
+                            <span class="hub-card-badge">Sem Key</span>
+                        </div>
+                    </div>
+
                 </div>
                 <div class="script-wrapper" id="ttn">
                     <pre class="script-text">Config = {
@@ -323,6 +520,44 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/sucvatthieunang/cac/r
                 </div>
                 <div class="script-wrapper" id="quantumOnyx">
                     <div class="script-text">loadstring(game:HttpGet("https://raw.githubusercontent.com/flazhy/QuantumOnyx/refs/heads/main/QuantumOnyx.lua"))()</div>
+                    <button class="copy-btn" onclick="copyScript(this)" title="Copiar"><i class="fas fa-copy"></i></button>
+                </div>
+                <div class="script-wrapper" id="astralHub">
+                    <div class="script-text">loadstring(game:HttpGet("https://rawscripts.net/raw/Blox-Fruits-ASTRAL-29222"))()</div>
+                    <button class="copy-btn" onclick="copyScript(this)" title="Copiar"><i class="fas fa-copy"></i></button>
+                </div>
+                <div class="script-wrapper" id="nhtHub">
+                    <div class="script-text">getgenv().Team = "Pirates" loadstring(game:HttpGet("https://raw.githubusercontent.com/trongdeptraihucscript/Main/refs/heads/main/Hoangtrongdepzai.lua"))()</div>
+                    <button class="copy-btn" onclick="copyScript(this)" title="Copiar"><i class="fas fa-copy"></i></button>
+                </div>
+                <div class="script-wrapper" id="tdtHub">
+                    <div class="script-text">loadstring(game:HttpGet("https://raw.githubusercontent.com/ThinhNek343/tdthub/refs/heads/main/maintdt.lua"))()</div>
+                    <button class="copy-btn" onclick="copyScript(this)" title="Copiar"><i class="fas fa-copy"></i></button>
+                </div>
+                <div class="script-wrapper" id="zeeHub">
+                    <div class="script-text">loadstring(game:HttpGet("https://link.trwxz.com/LS-Zee-Hub-VIP"))()</div>
+                    <button class="copy-btn" onclick="copyScript(this)" title="Copiar"><i class="fas fa-copy"></i></button>
+                </div>
+                <div class="script-wrapper" id="nightMystic">
+                    <pre class="script-text">repeat wait() until game:IsLoaded() and game.Players.LocalPlayer
+getgenv().team = "Marines" --  Marines or Pirates
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Dev-NightMystic/Bloxfruits/refs/heads/main/Script.lua"))()</pre>
+                    <button class="copy-btn" onclick="copyScript(this)" title="Copiar"><i class="fas fa-copy"></i></button>
+                </div>
+                <div class="script-wrapper" id="sigmaHub">
+                    <div class="script-text">loadstring(game:HttpGet("https://raw.githubusercontent.com/SigmaHubDangCap/BloxFruit/refs/heads/main/MainBloxFruit.lua"))()</div>
+                    <button class="copy-btn" onclick="copyScript(this)" title="Copiar"><i class="fas fa-copy"></i></button>
+                </div>
+                <div class="script-wrapper" id="nightHub">
+                    <div class="script-text">loadstring(game:HttpGet("https://raw.githubusercontent.com/WhiteX1208/Scripts/refs/heads/main/Trial.luau"))()</div>
+                    <button class="copy-btn" onclick="copyScript(this)" title="Copiar"><i class="fas fa-copy"></i></button>
+                </div>
+                <div class="script-wrapper" id="zenHub">
+                    <div class="script-text">loadstring(game:HttpGet("https://raw.githubusercontent.com/Itz-Npg/Roblox-Script/main/zenhubbf.lua", true))()</div>
+                    <button class="copy-btn" onclick="copyScript(this)" title="Copiar"><i class="fas fa-copy"></i></button>
+                </div>
+                <div class="script-wrapper" id="orbitHub">
+                    <div class="script-text">loadstring(game:HttpGet("https://raw.githubusercontent.com/Abyssal-lol/Orbit.cc/refs/heads/main/Loader.lua"))()</div>
                     <button class="copy-btn" onclick="copyScript(this)" title="Copiar"><i class="fas fa-copy"></i></button>
                 </div>
             </div>
